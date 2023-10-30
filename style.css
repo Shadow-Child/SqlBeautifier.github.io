@@ -1,0 +1,52 @@
+body{
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+h1{
+    text-align: center;
+}
+
+.text-box-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.text-box{
+    width: 80%;
+    height: 360px;
+    margin: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    resize: none;
+    display: block;
+}
+
+.container{
+    align-items: center;
+}
+
+.CodeMirror:read-only{
+    width: 80%;
+    height: 100% !important;
+    margin: 20px;
+    font-family: 'Courier New', Courier, monospace !important;
+    border: solid rgb(159, 157, 157) 1px;
+}
+
+.CodeMirror-lines{
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+.btn-container{
+    width: 100%;
+    text-align: center;
+}
+
+.button{
+width: 100px;
+height: 30px;
+}

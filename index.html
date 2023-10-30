@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Highlight</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CodeMirror/codemirror.css">
+   
+</head>
+<body>
+    <h1>SQL Highlight</h1>
+    <div class="container">
+        <div class="text-box-container">
+            <textarea class="text-box" id="input">
+                SELECT ROW_NUMBER() OVER (
+                    ORDER BY cmd.date_livraison DESC
+                   ) AS ROW_NUMBER,
+            </textarea>
+        </div>
+        <div class="btn-container">        
+            <input id="Beautify-btn" class="button" type="button" value="Beautify"  >
+        </div>
+        <div class="text-box-container" id="text-box-container">
+        
+        </div>
+    </div>  
+
+    <script src="CodeMirror/codemirror.js"></script>
+    <script src="CodeMirror/sql.js"></script>
+    <script src="sql-formatter.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
